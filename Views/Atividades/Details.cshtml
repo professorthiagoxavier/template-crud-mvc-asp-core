@@ -1,0 +1,42 @@
+﻿@model WebApplication1.Models.Atividade
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Atividade</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.rm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.rm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.urlGitHub)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.urlGitHub)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.numAtividade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.numAtividade)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
